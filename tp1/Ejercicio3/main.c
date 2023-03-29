@@ -1,30 +1,31 @@
 #include <stdio.h>
+#include <math.h>
 
-float factorial(int dato);
+#define EULER  2.7182818284
+#define TOL 0.00001
+
+float factorial(float dato);
+float numeroEuler(void);
 
 int main()
 {
-    double e = 0;
-    double tol;
-    int i; // iterador
 
-    printf("Ingrese un numero entre 0 y 1 : ");
-    scanf("%f", &tol);
+    int potencia;
+    float numero;
 
-    e += 1; // e = x^0 + e^1
+    printf("\n\n ingrese la potencia: ");
+    scanf("%d", &potencia);
 
-    while(1/factorial(i) > tol){
+    numero = pow(numeroEuler(), potencia); // me olvide la macro que hace las potencias, con eso elimino la libreria math.h
 
-        e += 1/factorial(i);
-        i++;
-    }
+    printf("\n  e^%d = %.10f ", potencia, numero);
+    printf("\n aproximadamente : %.10f ", pow(EULER, potencia));
 
-    printf("e^x = %.10f", e);
 
     return 0;
 }
 
-float factorial(int dato) {
+float factorial(float dato) {
 
     float acum = 1;
 
@@ -33,7 +34,19 @@ float factorial(int dato) {
         for(int i = 1 ; i <= dato ; i++)
             acum = acum * i;
     }
-
     return acum;
+}
 
+float numeroEuler(void) {
+
+    int i = 0;
+    float e = 0; // e = x^0 + e^1
+
+     while( 1 / factorial(i) > TOL){
+
+        e += 1 / factorial(i);
+        i++;
+    }
+
+    return e;
 }
