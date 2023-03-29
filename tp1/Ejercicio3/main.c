@@ -16,7 +16,7 @@ int main()
     printf("\n\n ingrese la potencia: ");
     scanf("%d", &potencia);
 
-    numero = pow(numeroEuler(), potencia); // me olvide la macro que hace las potencias, con eso saco la libreria math.h
+    numero = pow(numeroEuler(), potencia); // me olvide la macro que hace las potencias, con eso elimino la libreria math.h
 
     printf("\n  e^%d = %.10f ", potencia, numero);
     printf("\n aproximadamente : %.10f ", pow(EULER, potencia));
