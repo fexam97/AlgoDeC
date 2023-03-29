@@ -3,7 +3,7 @@
 
 float factorial(float dato);
 
-int main()
+int main()      // TODAVIA NO LO TERMINÉ, LO HICE CON POTENCIA X^1
 {
     double e;
     double tol;
