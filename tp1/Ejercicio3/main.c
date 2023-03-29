@@ -1,13 +1,16 @@
 #include <stdio.h>
 #define EULER  2.7182818284
 #define TOL 0.00001
+#include <math.h>
 
 float factorial(float dato);
 
-int main()      // TODAVIA NO LO TERMINÉ, LO HICE CON POTENCIA X^1
+int main()
 {
     double e;
+    int potencia;
     int i = 0; // iterador
+    float numero;
 
     e = 0; // e = x^0 + e^1
 
@@ -17,8 +20,14 @@ int main()      // TODAVIA NO LO TERMINÉ, LO HICE CON POTENCIA X^1
         i++;
     }
 
-    printf("\n e^x = %.10f", e);
-    printf("\n numero euler aproximadamente : %.10f", EULER);
+    printf("\n\n ingrese la potencia: ");
+    scanf("%d", &potencia);
+
+    numero = pow(e, potencia);
+
+    printf("\n  e^%d = %.10f ", potencia, numero);
+    printf("\n aproximadamente : %.10f ", pow(EULER, potencia));
+
 
     return 0;
 }
@@ -36,3 +45,4 @@ float factorial(float dato) {
     return acum;
 
 }
+
