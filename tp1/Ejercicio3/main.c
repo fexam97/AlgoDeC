@@ -1,30 +1,32 @@
 #include <stdio.h>
+#define EULER  2.7182818284
 
-float factorial(int dato);
+float factorial(float dato);
 
 int main()
 {
-    double e = 0;
+    double e;
     double tol;
-    int i; // iterador
+    int i = 0; // iterador
 
     printf("Ingrese un numero entre 0 y 1 : ");
     scanf("%f", &tol);
 
-    e += 1; // e = x^0 + e^1
+    e = 0; // e = x^0 + e^1
 
-    while(1/factorial(i) > tol){
+    while( 1 / factorial(i) > tol){
 
-        e += 1/factorial(i);
+        e += 1 / factorial(i);
         i++;
     }
 
-    printf("e^x = %.10f", e);
+    printf("\n e^x = %.10f", e);
+    printf("\n numero euler aproximadamente : %.10f", EULER);
 
     return 0;
 }
 
-float factorial(int dato) {
+float factorial(float dato) {
 
     float acum = 1;
 
