@@ -40,7 +40,7 @@ float calcularSeno(float dato) {
     int i = 0; // exponente
 
 
-    while(seno < TOL) {
+    while(seno < TOL) { // deberia ser : pow(dato, i) / factorial(i) < TOL 
 
             i = (i * 2) + 1;
             seno += pow(dato, i) / factorial(i);
