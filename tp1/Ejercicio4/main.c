@@ -1,13 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define TOL 0.000001
+#define VALOR_ABSOLUTO(A) ( (A < 0) ? A * -1 : A )
 
-#define TOL 0.0001
-
-#include <math.h>
-
-
-float raizCuadrada(float x, float tol);
-
+double raizCuadrada(int dato);
 
 int main()
 {
@@ -20,31 +16,34 @@ int main()
 
     }while(numero < 0);
 
-    printf("\n La raiz de %d es : %.8f", (int)numero, raizCuadrada(numero, TOL));
-    printf("\n La raiz de %d es : %.8f", (int)numero, sqrt(numero));
+    printf("\n\n La raiz de %d es : %.8f", (int)numero, raizCuadrada((int)numero));
 
     return 0;
 }
 
-float raizCuadrada(float x, float tol) {
+double raizCuadrada(int dato) {
 
     // R1 = 1
     // Ri = 0.5 / ( (Ri - R1) + ( x / (Ri - R1) )
 
-    // Ri > R1  :  si no, me da numero negativo
+    // Ri - R1 = me va a dar negativo, entonces uso el valor absoluto para que sea positivo
 
-    // termina cuando ( Ri - R1) < tol
+    double rUno = 1.0;
 
+    while(VALOR_ABSOLUTO((rUno * rUno) - dato) >= TOL) {
 
-    float rUno = 1; // R1
-    float rDos = 0; // Ri
+        double cociente = dato / rUno;
+        double promedio = 0.5 * (cociente + rUno); // Ri
 
-    while( (rUno - rDos) > TOL) {
+        printf("\nRi = 0.5 / ( %f + ( %d / %1f )", VALOR_ABSOLUTO(promedio - rUno), dato, VALOR_ABSOLUTO(promedio - rUno));
+        printf("\nCociente : %1f", cociente);
+        printf("\nRi : %1f\n\n", promedio);
 
-        rDos = rUno;
-        rDos = 0.5 * rUno + ( x / rUno);
-
+        rUno = promedio;
     }
 
-    return rDos;
+    printf("\n\nValor absoluto : %1f", VALOR_ABSOLUTO((rUno * rUno) - dato));
+    printf("\n\nTolerancia : %1f", TOL);
+
+    return rUno;
 }
