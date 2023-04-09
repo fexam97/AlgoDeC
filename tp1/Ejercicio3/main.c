@@ -4,7 +4,7 @@
 #define EULER  2.7182818284
 #define TOL 0.00001
 
-float funcionfactorial(float dato);
+float funcionFactorial(float dato);
 float numeroEuler(int dato);
 float procedimiento(int dato, int potencia, float factorial);
 
@@ -21,7 +21,7 @@ int main()
     return 0;
 }
 
-float funcionfactorial(float dato) {
+float funcionFactorial(float dato) {
 
     float acum = 1;
 
@@ -46,11 +46,9 @@ float numeroEuler(int dato) {
     int i = 0;
     float e = 0; // e = x^0 / 0! + x^1 / 1! + x^2 / 2! + x^3 / 3! ...
 
-    procedimiento(dato, i, funcionfactorial(i));
+    while( procedimiento(dato, i, funcionFactorial(i)) > TOL){
 
-     while( procedimiento(dato, i, funcionfactorial(i)) > TOL){
-
-        e += procedimiento(dato, i, funcionfactorial(i));
+        e += procedimiento(dato, i, funcionFactorial(i));
         i++;
     }
 
