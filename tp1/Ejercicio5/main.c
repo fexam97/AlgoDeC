@@ -7,8 +7,6 @@
 void esFibonacci(int dato);
 int main()
 {
-    // funciona bien, el problema es que el 2 y el 3 no pertenecen a la serie.
-
     int numero;
 
     printf("Ingrese un numero : ");
@@ -34,11 +32,10 @@ void esFibonacci(int dato) {
         printf("\n%d", suma);
     }
 
-
     printf("\n\nPrimer termino : %d", primerTermino);
     printf("\n\nSegundo termino : %d", segundoTermino);
 
-    if(primerTermino + segundoTermino == dato)
+    if( primerTermino + segundoTermino == dato || dato == 2 || dato == 3)
         printf("\n\n El numero %d pertenece a la serie de Fibonacci", dato);
     else
         printf("\n\n El numero %d NO pertenece a la serie de Fibonacci", dato);
