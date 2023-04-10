@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1680983686 source:c:\users\sombr\onedrive\escritorio\progra\tp1\ejercicio4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
