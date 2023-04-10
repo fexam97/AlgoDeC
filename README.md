@@ -40,10 +40,11 @@
 
 <h2>Unidad 5 Persistencia de memoria:</h2>
 
-<li>Archivos binarios y de texto, Su creación, modos de acceso posicionamiento, cierre, eliminación, y funciones relacionadas.</li> 
+<li>Archivos binarios y de texto, su creación, modos de acceso posicionamiento, cierre, eliminación, y funciones relacionadas.</li> 
 <li>Creación de archivos como lotes de prueba. Merge o apareo de archivos.</li> 
 
 <h2>Unidad 6 Introducción a la Recursividad:</h2>
 
-<li>Concepto de recursión. Estructura de funciones recursivas. Diferencias</li> 
-<li>entre recursividad e Iteración.</li> 
+<li>Concepto de recursión.</li>
+<li>Estructura de funciones recursivas.</li>
+<li>Diferencias entre recursividad e Iteración.</li> 
