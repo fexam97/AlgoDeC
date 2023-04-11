@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1680569699 source:c:\users\fer\desktop\progra clases\clase 1\funciones.c
+	"funciones.h"
+
+1680572835 c:\users\fer\desktop\progra clases\clase 1\funciones.h
+	<stdio.h>
+	<stdlib.h>
+	"matematicas.h"
+
+1680572758 source:c:\users\fer\desktop\progra clases\clase 1\matematicas.c
+	"matematicas.h"
+
+1680572745 c:\users\fer\desktop\progra clases\clase 1\matematicas.h
+
+1680572835 source:c:\users\fer\desktop\progra clases\clase 1\main.c
+	"funciones.h"
+
+1681226787 source:c:\users\sombr\onedrive\escritorio\clase 1\funciones.c
+	"funciones.h"
+
+1680572835 c:\users\sombr\onedrive\escritorio\clase 1\funciones.h
+	<stdio.h>
+	<stdlib.h>
+	"matematicas.h"
+
+1681226747 c:\users\sombr\onedrive\escritorio\clase 1\matematicas.h
+	<math.h>
+
+1681226545 source:c:\users\sombr\onedrive\escritorio\clase 1\main.c
+	"funciones.h"
+
+1681226691 source:c:\users\sombr\onedrive\escritorio\clase 1\matematicas.c
+	"matematicas.h"
+
