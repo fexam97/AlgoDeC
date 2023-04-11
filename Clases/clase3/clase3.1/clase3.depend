@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1681168248 source:c:\users\laboratorios\desktop\proyectopunteros\clase3\main.c
+	"funciones.h"
+
+1681168226 c:\users\laboratorios\desktop\proyectopunteros\clase3\funciones.h
+	<stdio.h>
+	<stdlib.h>
+
+1681168335 source:c:\users\laboratorios\desktop\proyectopunteros\clase3\funciones.c
+	"funciones.h"
+
