@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1681780407 source:c:\users\fer\desktop\progra clases\clase4\clase4.1\main.c
+	"cadenas.h"
+
+1681780496 c:\users\fer\desktop\progra clases\clase4\clase4.1\cadenas.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1681780574 source:c:\users\fer\desktop\progra clases\clase4\clase4.1\cadenas.c
+	"cadenas.h"
+

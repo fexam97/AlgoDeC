@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1493694778 source:c:\users\jonatan\desktop\programacion\02 - algoritmos\archivos\texto_a_binario\archivos.c
+	<stdio.h>
+	<string.h>
+	"archivos.h"
+
+1493693738 c:\users\jonatan\desktop\programacion\02 - algoritmos\archivos\texto_a_binario\archivos.h
+
+1493692316 source:c:\users\jonatan\desktop\programacion\02 - algoritmos\archivos\texto_a_binario\main.c
+	<stdio.h>
+	<stdlib.h>
+	"archivos.h"
+
+1493728237 source:c:\users\32691574\downloads\programacion\programacion\02 - algoritmos\archivos\texto_fijo_a_binario\main.c
+	<stdio.h>
+	<stdlib.h>
+	"archivos.h"
+
+1493737799 c:\users\32691574\downloads\programacion\programacion\02 - algoritmos\archivos\texto_fijo_a_binario\archivos.h
+
+1493739256 source:c:\users\32691574\downloads\programacion\programacion\02 - algoritmos\archivos\texto_fijo_a_binario\archivos.c
+	<stdio.h>
+	<string.h>
+	"archivos.h"
+

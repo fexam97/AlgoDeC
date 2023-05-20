@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1681778090 source:c:\users\fer\desktop\progra clases\clase4\ordenamiento.c
+	"ordenamiento.h"
+
+1681775733 c:\users\fer\desktop\progra clases\clase4\ordenamiento.h
+	<stdio.h>
+	<stdlib.h>
+
+1681776151 source:c:\users\fer\desktop\progra clases\clase4\main.c
+	"ordenamiento.h"
+
