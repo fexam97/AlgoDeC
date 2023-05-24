@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1684940974 source:c:\users\sombr\onedrive\escritorio\algo de c by me\asignaciondememoriatres\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
