@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1685051153 source:c:\users\sombr\onedrive\escritorio\progra\unidad 2\ejercicio2_3b\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
