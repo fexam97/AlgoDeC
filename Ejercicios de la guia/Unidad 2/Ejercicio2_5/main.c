@@ -3,7 +3,7 @@
 
 // no me salio
 
-void *memmoveCustom(void *destino, const void *origen, size_t len);
+void *memmoveCustom(void *destino, const void *origen, size_t longitud);
 
 int main()
 {
@@ -26,7 +26,7 @@ int main()
     printf("\n\nvector cadenaNueva:");
 
     for(int i = 0 ; i < tam ; i++)
-        printf("\n%d", (int*)cadenaNueva[i]);
+        printf("\n%d", (int*)cadenaNueva[i]); // cadena nueva me tiene que dar : 1 ,2, 3, 4. y solo me arroja basura
 
     return 0;
 
@@ -36,9 +36,8 @@ void *memmoveCustom(void *destino, const void *origen, size_t longitud)
 {
     for(int i = 0 ; i < longitud ; i++) {
 
-        *(int*)destino = *(int*)origen;
-        destino++;
-        origen++;
+        *(int*)(destino + i) = *(int*)(origen + i);
+
     }
 
     return destino;
