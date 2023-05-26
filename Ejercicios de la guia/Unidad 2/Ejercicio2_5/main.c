@@ -26,7 +26,7 @@ int main()
     printf("\n\nvector cadenaNueva:");
 
     for(int i = 0 ; i < tam ; i++)
-        printf("\n%d", (int*)cadenaNueva[i]); // cadena nueva me tiene que dar : 1 ,2, 3, 4. y solo me arroja basura
+        printf("\n%d", cadenaNueva[i]); // cadena nueva me tiene que dar : 1 ,2, 3, 4. y solo me arroja basura
 
     return 0;
 
