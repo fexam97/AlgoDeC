@@ -10,7 +10,16 @@
 void cargarVector(int *vec, int ce);
 void mostrarVector(int *vec, int ce);
 int ingresoCantidadDeElementos(int desde, int hasta);
-float sumaYPromedio(int *vec, int ce, long *suma);
+float funcionSumaYPromedio(int *vec, int ce, long *suma);
 
+// otra version de la funcion anterior
+
+typedef struct{
+    long suma;
+    float promedio;
+
+}t_sumaYProm;
+
+t_sumaYProm obtenerSumaYPromedio(int *vec, int ce, t_sumaYProm alu);
 
 #endif // FUNCIONES_H_INCLUDED

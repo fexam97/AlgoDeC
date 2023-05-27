@@ -32,13 +32,26 @@ void mostrarVector(int *vec, int ce) {
 
 }
 
-float sumaYPromedio(int *vec, int ce, long *suma) {
+float funcionSumaYPromedio(int *vec, int ce, long *suma) {
 
     for(int i = 0 ; i < ce ; i++) {
-
-    (float)suma += *(vec + i);
-
+        /*
+        suma += *(vec + i);
+        */
     }
 
-    return (float)suma;
+    return 0;
+}
+
+t_sumaYProm obtenerSumaYPromedio(int *vec, int ce, t_sumaYProm alu) {
+
+
+    for(int i = 0 ; i < ce ; i++){
+
+        alu.suma += *(vec + i);
+    }
+
+    alu.promedio = (float)(alu.suma / ce);
+
+    return alu;
 }
