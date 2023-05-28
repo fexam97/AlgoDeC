@@ -10,7 +10,7 @@
 void cargarVector(int *vec, int ce);
 void mostrarVector(int *vec, int ce);
 int ingresoCantidadDeElementos(int desde, int hasta);
-float funcionSumaYPromedio(int *vec, int ce, long *suma);
+void funcionSumaYPromedio(int *vec, int ce, long *suma, float *prom);
 
 // otra version de la funcion anterior
 

@@ -32,19 +32,23 @@ void mostrarVector(int *vec, int ce) {
 
 }
 
-float funcionSumaYPromedio(int *vec, int ce, long *suma) {
+void funcionSumaYPromedio(int *vec, int ce, long *suma, float *prom) {
+
+    int acum = 0;
+    float promedio = 0;
 
     for(int i = 0 ; i < ce ; i++) {
-        /*
-        suma += *(vec + i);
-        */
+        acum += *(vec + i);
     }
+
+    *suma = acum;
+    promedio = (float)(acum/ce);
+    *prom = promedio;
 
     return 0;
 }
 
 t_sumaYProm obtenerSumaYPromedio(int *vec, int ce, t_sumaYProm alu) {
-
 
     for(int i = 0 ; i < ce ; i++){
 

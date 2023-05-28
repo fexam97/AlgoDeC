@@ -30,10 +30,15 @@ int main()
     cargarVector(arreglo, cantElementos);
     mostrarVector(arreglo, cantElementos);
 
-    //long *suma = 0;
+    long *suma;
+    float *promedio;
 
-    //printf("\n la suma es : %d ", sumaYPromedio(arreglo, cantElementos, &suma));
+    funcionSumaYPromedio(arreglo, cantElementos, &suma, &promedio);
 
+    printf("\n la suma : %d", suma);
+    printf("\n promedio es : %0.2f", promedio);
+
+    /*
     t_sumaYProm numero;
 
     numero.suma = 0;
@@ -41,7 +46,7 @@ int main()
 
     printf("\n la suma es : %d ", obtenerSumaYPromedio(arreglo, cantElementos, numero));
     printf("\n el promedio es : %0.2f", obtenerSumaYPromedio(arreglo, cantElementos, numero)); // no funciona el promedio
-
+    */
     return 0;
 }
 
