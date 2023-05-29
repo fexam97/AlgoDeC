@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1681775496 source:c:\users\jonatan\desktop\ejercicios_2023010417\ordenamiento\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ordenamiento.h"
+
+1681775734 c:\users\jonatan\desktop\ejercicios_2023010417\ordenamiento\ordenamiento.h
+
+1681776313 source:c:\users\jonatan\desktop\ejercicios_2023010417\ordenamiento\ordenamiento.c
+	<stdio.h>
+	"ordenamiento.h"
+
