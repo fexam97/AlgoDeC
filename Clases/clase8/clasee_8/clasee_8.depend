@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1685924122 source:c:\users\sombr\onedrive\escritorio\progra\clasee_8\clasee_8\main.c
+	"tipos.h"
+	"ordenamiento.h"
+	"funciones.h"
+
+1685924752 c:\users\sombr\onedrive\escritorio\progra\clasee_8\clasee_8\tipos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ordenamiento.h"
+
+1685924275 c:\users\sombr\onedrive\escritorio\progra\clasee_8\clasee_8\ordenamiento.h
+	"tipos.h"
+
+1685924679 source:c:\users\sombr\onedrive\escritorio\progra\clasee_8\clasee_8\funciones.c
+	"funciones.h"
+
+1685923099 c:\users\sombr\onedrive\escritorio\progra\clasee_8\clasee_8\funciones.h
+	"tipos.h"
+
+1685924283 source:c:\users\sombr\onedrive\escritorio\progra\clasee_8\clasee_8\ordenamiento.c
+	"ordenamiento.h"
+
