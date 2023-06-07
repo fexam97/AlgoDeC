@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1686178215 source:c:\users\sombr\onedrive\escritorio\progra\unidad 4\ejericio4_6\main.c
+	"funciones.h"
+
+1686178247 c:\users\sombr\onedrive\escritorio\progra\unidad 4\ejericio4_6\funciones.h
+	<stdio.h>
+	<stdlib.h>
+
+1686179770 source:c:\users\sombr\onedrive\escritorio\progra\unidad 4\ejericio4_6\funciones.c
+	"funciones.h"
+
