@@ -16,11 +16,12 @@ void restarFecha(tFecha fecha, int numero) {
             fecha.anio--;
         }
     }
+
     fecha.dia = fecha.dia - numero;
-    fecha.dia += vecDias[ES_BISIESTO(fecha.anio)][fecha.mes-1];
 
-    if(fecha.dia > 0){
+    if(fecha.dia < 0){
 
+        fecha.dia += vecDias[ES_BISIESTO(fecha.anio)][fecha.mes-1];
         fecha.mes--;
 
         if(fecha.mes < 1){
