@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1686777725 source:c:\users\sombr\onedrive\escritorio\progra\unidad 5\topicostp\main.c
+	"funciones.h"
+
+1686782770 c:\users\sombr\onedrive\escritorio\progra\unidad 5\topicostp\funciones.h
+	"tipos.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1686782783 c:\users\sombr\onedrive\escritorio\progra\unidad 5\topicostp\tipos.h
+	"funciones.h"
+
+1686780610 source:c:\users\sombr\onedrive\escritorio\progra\unidad 5\topicostp\funciones.c
+	"funciones.h"
+	"tipos.h"
+
