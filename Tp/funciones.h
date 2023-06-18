@@ -13,5 +13,5 @@ int ingresarYValidar(const char *nombArch);
 long validarDni(int desde, int hasta);
 t_fecha validarFecha(void);
 char validarSexo(void);
-int mostrarArchivo(const char *nombArch, size_t tam, t_alumno alu[]);
+int mostrarArchivo(const char *nombArch);
 #endif // FUNCIONES_H_INCLUDED

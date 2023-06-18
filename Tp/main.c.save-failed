@@ -1,0 +1,17 @@
+#include "funciones.h"
+
+int main()
+{
+
+    const char nombArch[] = "Alumnos.dat";
+
+    if(!ingresarYValidar(nombArch))
+        printf("\n error al abrir el archivo ");
+
+
+    mostrarArchivo(nombArch);
+
+
+
+    return 0;
+}

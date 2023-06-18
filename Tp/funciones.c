@@ -6,7 +6,7 @@ long validarDni(int desde, int hasta) {
     long dni;
 
     do{
-        scanf("%d", &dni);
+        scanf("%li", &dni);
     }while(dni <= desde && dni >= hasta);
 
     return dni;
@@ -37,9 +37,9 @@ t_fecha validarFecha(void) { // agrandar la funcion
         scanf("%d", &a);
     }while(a <= 1900);
 
-    d = dias.dia;
-    m = dias.mes;
-    a = dias.anio;
+    dias.dia = d;
+    dias.mes = m;
+    dias.anio = a;
 
     return dias;
 }
@@ -65,16 +65,24 @@ int materiasAprobadas(int cantidad) {
     do{
         scanf("%d", &materias);
     }while(materias <= cantidad);
+
+    return materias;
 }
 
-
+/***********************************************************************/
 int ingresarYValidar(const char *nombArch) {
 
     t_alumno alumno[3];
-    char nombre[50];
     int cantAlumnos = 0;
+    char nombre[50];
+    FILE *pf;
+    pf = fopen(nombArch, "wb");
 
-    printf("cantidad de alumnos : %d", sizeof(alumno)/sizeof(alumno[0]));
+
+    if(!pf)
+        return ERROR;
+
+    printf("\n cantidad de alumnos : %d", sizeof(alumno)/sizeof(alumno[0]));
 
     while(cantAlumnos != sizeof(alumno)/sizeof(alumno[0])){
 
@@ -105,37 +113,36 @@ int ingresarYValidar(const char *nombArch) {
 
     printf("\n FIN DE INGRESO DE ALUMNOS ");
 
-    FILE *pf;
-    pf = fopen(nombArch, "wb");
-
-    if(pf = NULL)
-        return ERROR;
-
     fwrite(&alumno, sizeof(alumno), 1, pf);
 
-    mostrarArchivo(nombArch, sizeof(t_alumno), alumno);
-
     fclose(pf);
+
+    return 0;
 }
+/******************************************************************************/
+int mostrarArchivo(const char *nombArch) {
 
-int mostrarArchivo(const char *nombArch, size_t tam, t_alumno alu[]) {
+    FILE *pm = fopen(nombArch, "rb");
 
-    FILE *pf = fopen(nombArch, "rb");
-
-    if(!pf)
+    if(!pm)
         return ERROR;
 
+    t_alumno estructura;
 
-    fread(alu, tam, 1, pf);
+    fread(&estructura, sizeof(estructura), 1, pm);
 
-    while(!feof(pf)) {
+        printf("\n DNI  \t\t NOMBRE Y APELLIDO \t FECHA DE NACIMIENTO  ");
+    while(!feof(pm)) {
 
-        printf("%d", alu->dni);
-
-        fread(alu, tam, 1, pf);
+        printf("\n%li", estructura.dni);
+        printf("\t%s", estructura.apeYNom);
+        printf("\t\t\t %d/%d/%d", estructura.fechaNac.dia, estructura.fechaNac.mes, estructura.fechaNac.anio);
+        fread(&estructura, sizeof(estructura), 1, pm);
     }
 
-    fclose(pf);
+    fclose(pm);
+
+    return 0;
 }
 
 
